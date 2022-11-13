@@ -1,0 +1,158 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="606,1497" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,1432" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="items">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String)" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="574,1342" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: W3Schools Tryit Editor" sap:VirtualizedContainerService.HintSize="512,1220" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7272ce88-3db1-47ce-8f9f-092dfebdc791" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,994" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="options" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:FindChildren Children="[options]" DisplayName="Find Children 'SELECT  cars'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="436,116" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                <ui:FindChildren.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a0728cb-e1be-4641-b217-bfa16913c6c7" InformativeScreenshot="90e3d6cca5e2bbd67ee2e8c2d3cf9a23" Selector="&lt;webctrl id='iframeResult' tag='IFRAME' /&gt;&lt;webctrl id='cars' tag='SELECT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:FindChildren.Target>
+              </ui:FindChildren>
+              <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,610" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[options]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="ui:UiElement">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:UiElement" Name="nOption" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,475" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="item" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGetAttribute Attribute="InnerText" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="358,196" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[nOption]" Version="V3">
+                        <uix:NGetAttribute.Result>
+                          <OutArgument x:TypeArguments="x:String">[item]</OutArgument>
+                        </uix:NGetAttribute.Result>
+                      </uix:NGetAttribute>
+                      <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="358,149" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+                        <InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="scg:List(x:String)">[items]</InArgument>
+                        </InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="x:String">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="item" />
+                        </InArgument>
+                      </InvokeMethod>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+              </ui:ForEach>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="436,97" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot;,&quot;,items)]" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS+SURBVGhD7Vh7iBVVGD9a2RPtQUX2UAuLgigsLIhqoYiUSqG2oCjWWu8547a9/iqKuFSgpGndvLv3nNldcQPDhaCCIImoIOkFPYgokDB7F2VWpmuu2e8789127syZuXN3brHG/ODHvcz3OmfOOd/3nREFChQoUOD/i+qyo4QvF4KLnKzJ81hzkkKXzhBGfSGM/MVJrVax5iSF3z0HE/gI3Brib+B+cFT46i7WnKTQpUPA00S/ms3swJv/AIPfCw6LNV1Hs+YBgJW3Him0XGsHr9WHdkIWRhnw3SZ8U2jvZlEuTw2MHKj0HgrHDzpsE+htEoPyQrZOB8X1vSWw24MYv4u+7gtYAtRwmo3cCSHtq2Rq9QZmfQJbxWGWno89+aXT1s0x+HxKrL73cPaQjH51CfS3WzutvsZKPG7j2Rfa5x2D2b0YcpzEP8EudhmHlkOYwF8Rm2b8Hgf1bPaQjGACYbt9mMjHmMSZgUJN3oSHv0aUXNyKQzUjMApB91yEVWx18HUOpm7NOqrLTsVE5iPOCtjUxzocCOk0G/UqP2xC+ajYL6YEhkCldzqevxzXy8xRvMDL2Fs2GPlwYIta8A8GYsvkprarcC5bIVfLG/B8R0yvNb4On0ewxzCmiJHOg/j/OIy6PrDz9vIThpEbQk6TOIa9/hjn6BnY+885dFrlDmyPGxtWlkA1wKiNkF2Ds3JicF5tcdsc2HmbWZOhS/MwoG/ZaRq3iHVyLhwswP96ZcxJ+bwdYBhGKsjowI7il1I5JZstVp/SKZ3dBqzrOgzCKtjkQNoD+yRW4r24LMZ9IGUwl2ycWu3CgK7mkQSgXkhLGvRYRH839B+B3LHtfO9SCL+LGEyclO5oy1FQl7yB3tv2JYZR7jgY6fJKvLQnwPXgCpzX+Sx1wO5t5bsDTIC+vE08fftM+HzfKY8R2yY3Kt2nwFnezEJ8zbYYBKNuiciS+InN+blRkw/AWXTvZafv7UT26GBvAeggunQbiQPr3ZepuKXCpjDburqCpJNaCq1G4KOxatfkFfCJy4jDJkyN5NCvTmarCYIKiFb3YzB7nEHSuR0pbzG8NOb1oGpvjOi6SI1eGy4rfd7pmMBnjgBNKDeJyoJg70dRk9dCJ+gs0+h7P4qhJcezVQ7o0j3OAMn8A/36xWwdxzAuJka9ELFJoKw4W4mWQP16cC91BHBRVmMtQRT0NSFLgqDePzXnZ4XxroNDKufuQOP8CoOby1bpyFTxaZLeQ/kz0sAdx8LZSxHnUdJddVWskiZhSJ4DffrK4PJV588ohAvZIgdoS9hC5KVder7BeZnHFs0xUp4GfythR72Syx+2EPqgeiHMjSAFchvroI/7bauo4VKfdI+m5i5872gLdOkqOKZvMtGA28TgnTNZKzs6ba1Z7fBHb38Na7URlNKMejYWzPdKrNE61vYch0k0dr+++hw16CzWaDOq9vPJT6GA72BlTmLpxOCXeuCnvrJUhZeLcuc0lrYZwRcyjUB0+HYh79+du9hQu23UWzyBbfabz78K412OQD+An+Z++wTK80b2wt9urO7y/NW3GcpiKlbhGQRcyk/yg5KAUa+gjvxHH2wHemZlLlpZ0ZaLTIECBQoUyAwh/gaK7qFeYKzP+wAAAABJRU5ErkJggg==" InformativeScreenshot="07bb16dc7d70853ba7907cb0e6e36aa1.jpg" Selector="&lt;html app='chrome.exe' title='W3Schools Tryit Editor' /&gt;" Url="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
