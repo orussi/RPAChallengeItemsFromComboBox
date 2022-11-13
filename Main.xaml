@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="606,1497" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="606,1729" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -67,32 +67,29 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Activity-0" sap:VirtualizedContainerService.HintSize="616,1432" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Activity-0" sap:VirtualizedContainerService.HintSize="616,1664" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:List(x:String)" Name="items">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="items" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Activity-1" sap:VirtualizedContainerService.HintSize="574,1342" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="This workflow get all the items from the combobox in the next link: &#xD;&#xA;https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select" DisplayName="Activity-1" sap:VirtualizedContainerService.HintSize="574,1574" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Activity-2" sap:VirtualizedContainerService.HintSize="512,1220" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7272ce88-3db1-47ce-8f9f-092dfebdc791" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Activity-2" sap:VirtualizedContainerService.HintSize="512,1410" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7272ce88-3db1-47ce-8f9f-092dfebdc791" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Activity-3" sap:VirtualizedContainerService.HintSize="478,994" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Activity-3" sap:VirtualizedContainerService.HintSize="478,1184" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="options" />
               </Sequence.Variables>
@@ -101,7 +98,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:FindChildren Children="[options]" DisplayName="Activity-4" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="436,116" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+              <ui:FindChildren sap2010:Annotation.AnnotationText="The combobox is a select element, inside this element contains a list a option elements, each one has a item as inner text. With this activity we get the list of option elements." Children="[options]" DisplayName="Activity-4" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="436,188" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
                 <ui:FindChildren.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a0728cb-e1be-4641-b217-bfa16913c6c7" InformativeScreenshot="90e3d6cca5e2bbd67ee2e8c2d3cf9a23" Selector="&lt;webctrl id='iframeResult' tag='IFRAME' /&gt;&lt;webctrl id='cars' tag='SELECT' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -112,40 +109,60 @@
                     </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:FindChildren.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:FindChildren>
-              <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="Activity-5" sap:VirtualizedContainerService.HintSize="436,610" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[options]">
+              <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="Activity-5" sap:VirtualizedContainerService.HintSize="436,696" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[options]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="ui:UiElement">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ui:UiElement" Name="nOption" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Activity-6" sap:VirtualizedContainerService.HintSize="400,475" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Activity-6" sap:VirtualizedContainerService.HintSize="400,561" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="item" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NGetAttribute Attribute="InnerText" DisplayName="Activity-7" sap:VirtualizedContainerService.HintSize="358,196" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[nOption]" Version="V3">
+                      <uix:NGetAttribute sap2010:Annotation.AnnotationText="For each option we get the inner text which is the item we want to get." Attribute="InnerText" DisplayName="Activity-7" sap:VirtualizedContainerService.HintSize="358,238" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[nOption]" Version="V3">
                         <uix:NGetAttribute.Result>
                           <OutArgument x:TypeArguments="x:String">[item]</OutArgument>
                         </uix:NGetAttribute.Result>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetAttribute>
-                      <InvokeMethod DisplayName="Activity-8" sap:VirtualizedContainerService.HintSize="358,149" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+                      <InvokeMethod sap2010:Annotation.AnnotationText="Add the new found item to the list of items." DisplayName="Activity-8" sap:VirtualizedContainerService.HintSize="358,191" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
                         <InvokeMethod.TargetObject>
                           <InArgument x:TypeArguments="scg:List(x:String)">[items]</InArgument>
                         </InvokeMethod.TargetObject>
-                        <InArgument x:TypeArguments="x:String">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="item" />
-                        </InArgument>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <InArgument x:TypeArguments="x:String">[item]</InArgument>
                       </InvokeMethod>
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEach.Body>
               </ui:ForEach>
-              <WriteLine DisplayName="Activity-9" sap:VirtualizedContainerService.HintSize="436,97" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot;,&quot;,items)]" />
+              <WriteLine sap2010:Annotation.AnnotationText="Output all the items separated by comma." DisplayName="Activity-9" sap:VirtualizedContainerService.HintSize="436,128" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot;,&quot;,items)]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </WriteLine>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
